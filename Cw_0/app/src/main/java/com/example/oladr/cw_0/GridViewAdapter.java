@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class GridViewAdapter extends ArrayAdapter
@@ -50,8 +52,11 @@ public class GridViewAdapter extends ArrayAdapter
         int width = displayMetrics.widthPixels;
         int height = displayMetrics.heightPixels;
         holder.image.setLayoutParams(new ConstraintLayout.LayoutParams(width/2, height/4));
+        Glide.with(context)
+                .load((int) data.get(position))
+                .into(holder.image);
         //holder.image.setImageResource((Integer) data.get(position));
-        holder.image.setImageBitmap(BitmapFactory.decodeResource(context.getResources(), (int) data.get(position)));
+        //holder.image.setImageBitmap(BitmapFactory.decodeResource(context.getResources(), (int) data.get(position)));
         return row;
     }
 
