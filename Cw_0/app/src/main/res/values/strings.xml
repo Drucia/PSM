@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cw_0</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/img_1</item>
+        <item>@drawable/img_2</item>
+        <item>@drawable/img_3</item>
+        <item>@drawable/img_4</item>
+        <item>@drawable/img_5</item>
+        <item>@drawable/img_6</item>
+        <item>@drawable/img_7</item>
+        <item>@drawable/img_8</item>
+        <item>@drawable/img_9</item>
+        <item>@drawable/img_10</item>
+        <item>@drawable/img_11</item>
+        <item>@drawable/img_12</item>
+    </string-array>
+</resources>
